@@ -12,15 +12,18 @@
         function validarInput(){
             var curp = document.querySelector(".curp").value;
             var nss  = document.querySelector(".nss").value;
+            var bandera;
 
             if((curp == null || curp =="")&&(nss == null || nss =="")){
                 alert("no hagas nada");
                 console.log("curp: ", curp);
                 console.log("nss: ", nss);
             }else if((curp != null || curp !="")&&(nss != null || nss !="")){
-                alert("funciona");
+                // alert("funciona");
                 console.log("curp: ", curp);
                 console.log("nss: ", nss);
+                bandera=curp+" And NSS= "+nss;
+                console.log("bandera", bandera)
             }else if((curp == null || curp =="")&&(nss != null || nss !="")){
                 alert("funciona");
                 console.log("curp: ", curp);
